@@ -86,6 +86,11 @@ typedef struct {
 	 *  Otherwise ignored.
 	 */
 	coap_sec_config_t *setting;
+	/** Interface name. Max length 63 bytes. Provided as a pointer from
+	 * application. The string must be zero terminated. If set to NULL,
+	 * this field will be ignored.
+	 */
+	char * ifr_name;
 } coap_local_t;
 
 /**@brief Transport initialization information. */
