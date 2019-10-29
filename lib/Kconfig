@@ -24,4 +24,6 @@ rsource "pdn_management/Kconfig"
 
 rsource "multithreading_lock/Kconfig"
 
+rsource "nrf_inbuilt_key/Kconfig"
+
 endmenu

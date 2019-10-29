@@ -19,7 +19,11 @@ LOG_MODULE_REGISTER(app_lwm2m_client, CONFIG_APP_LOG_LEVEL);
 #include <lte_lc.h>
 
 #if defined(CONFIG_LWM2M_DTLS_SUPPORT)
+#if defined(CONFIG_NRF_INBUILT_KEY)
 #include "nrf_inbuilt_key.h"
+#else
+#error "Missing CONFIG_NRF_INBUILT_KEY"
+#endif
 #endif
 
 #include "ui.h"
